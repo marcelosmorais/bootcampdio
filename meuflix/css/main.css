@@ -1,0 +1,139 @@
+:root{
+    --vermelho: #E50914;
+    --preto:#000;
+    --branco: #fff;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Elementos Base*/
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--branco);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 5%;
+}
+
+header .logo img{
+    width: 40%;
+    margin: 3%;
+
+}
+
+header nav a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--branco);
+    margin:5px;
+    font-size: 12px;
+}
+header nav a:hover{
+    color: darkgrey;
+}
+header nav a:visited{
+    font-weight: 800;
+}
+
+/*Filme Principal*/
+.filme-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.918)100%), url(/meuflix/img/capa-house.jpg);    
+    background-size: cover;
+       
+        
+}
+
+.filme-principal .container{  
+    margin-left: 30px;      
+    
+   
+}
+.filme-principal .titulo{
+    font-size: 50px;
+    margin-top:  1%;
+    font-family: monospace;
+}
+.filme-principal .descricao{
+    width: 50%;
+    margin-top: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.filme-principal .fas .fa-star i{
+    margin-top: 20px;
+}
+
+.botoes{
+    display: flex;
+    
+}
+.botao{
+    background: rgba(0, 0, 0,.40);
+    border:none;
+    color:  #fff;
+    padding: 15px;
+    margin: 30px ;   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition:.4s, ease all ;
+}
+.botao i{
+    margin-right: 10px;
+}
+
+.botao:hover{
+    background: #fff;
+    color: black;
+}
+.myconfig{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.carrossel-filmes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.carrossel-filmes .info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    display: flex;
+   margin-right: 85%;
+}
+.carrossel-filmes .info a{
+    text-decoration: none;
+    color: #fff;
+}
+.carrossel-filmes .info a:hover{
+    text-decoration: none;
+    color:var(--vermelho)
+}
+
+.box-filme{
+    height: 40%;
+    width: 40%;
+    display: block;
+    border-radius: 10px;
+    
+}
+
+
